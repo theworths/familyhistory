@@ -10,7 +10,7 @@ App = React.createClass({
 
   renderPhotos() {
     return this.getPhotos().map((photo) => {
-      return <Photo key={photo._id} photo={photo} />;
+      return <PhotoItem key={photo._id} photo={photo} />;
     });
   },
 
