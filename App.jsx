@@ -1,16 +1,16 @@
 // App component - represents the whole app
 App = React.createClass({
-  getTasks() {
+  getPhotos() {
     return [
-      { _id: 1, text: "This is task 1" },
-      { _id: 2, text: "This is task 2" },
-      { _id: 3, text: "This is task 3" }
+      { _id: 1, text: "This is photo 1" },
+      { _id: 2, text: "This is photo 2" },
+      { _id: 3, text: "This is photo 3" }
     ];
   },
 
-  renderTasks() {
-    return this.getTasks().map((task) => {
-      return <Task key={task._id} task={task} />;
+  renderPhotos() {
+    return this.getPhotos().map((photo) => {
+      return <Photo key={photo._id} photo={photo} />;
     });
   },
 
@@ -18,11 +18,11 @@ App = React.createClass({
     return (
       <div className="container">
         <header>
-          <h1>Todo List</h1>
+          <h1>Photo List</h1>
         </header>
 
         <ul>
-          {this.renderTasks()}
+          {this.renderPhotos()}
         </ul>
       </div>
     );
