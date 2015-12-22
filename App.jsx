@@ -25,7 +25,7 @@ App = React.createClass({
   var text = React.findDOMNode(this.refs.textInput).value.trim();
 
   Photos.insert({
-    text: text,
+    caption: text,
     createdAt: new Date() // current time
   });
 
