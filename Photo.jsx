@@ -7,7 +7,7 @@ Photo = React.createClass({
   },
   render() {
     return (
-      <li>{this.props.photo.text}</li>
+      <li>{this.props.photo.caption}</li>
     );
   }
 });

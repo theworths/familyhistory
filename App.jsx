@@ -2,9 +2,9 @@
 App = React.createClass({
   getPhotos() {
     return [
-      { _id: 1, text: "This is photo 1" },
-      { _id: 2, text: "This is photo 2" },
-      { _id: 3, text: "This is photo 3" }
+      { _id: 1, caption: "This is photo 1" },
+      { _id: 2, caption: "This is photo 2" },
+      { _id: 3, caption: "This is photo 3" }
     ];
   },
 
